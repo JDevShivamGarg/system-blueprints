@@ -14,7 +14,7 @@ The artifact here is not the implementation. It is the reasoning behind it.
 
 ## Why This Exists
 
-In a world where code generation is increasingly automated, the scarcest and most valuable thing is not syntax — it is design judgment. The ability to define a problem precisely, choose the right architecture, make explicit trade-offs, and document the reasoning behind every decision.
+In a world where code generation is increasingly getting automated, the scariest and most valuable thing is not syntax — it is design judgment. The ability to define a problem precisely, choose the right architecture, make explicit trade-offs, and document the reasoning behind every decision.
 
 Most public repositories contain code with no explanation of why it was written that way. This repo inverts that. The document *is* the deliverable.
 
