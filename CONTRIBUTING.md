@@ -10,21 +10,42 @@ Plans are rejected if they contain:
 - A threat model limited to "use HTTPS" or equivalent
 - Scalability claims without a stated ceiling and identified bottleneck
 - A Limitations section with disclaimers instead of specific failure conditions
+- Engineering Principles that are slogans with no stated practical meaning
+- A Testing Strategy table with empty tool or cadence columns
+- An Implementation Roadmap with no week or order indicators
+- A Risk Register that duplicates Failure Modes instead of covering wrong assumptions
 
 ---
 
 ## Before You Submit
 
+**Core**
 - [ ] You have used `template/PLAN_TEMPLATE.md` as the base
 - [ ] Every section is filled — no placeholder text, no `[TODO]`
+- [ ] Engineering Principles state practical meaning, not just a slogan
+- [ ] Mermaid diagrams are present for: system architecture, data flow, and data models
+- [ ] System Architecture includes non-negotiable constraints, not just components
+
+**Technical depth**
 - [ ] Every tech stack row has a rejected alternative and a reason for rejection
+- [ ] Key Dependencies lists actual package names, not just layer-level choices
+- [ ] Data Models includes runnable DDL, not only the ER diagram
+- [ ] Configuration Reference covers every tunable parameter referenced elsewhere in the plan
+- [ ] Internal Service Contracts are defined if the system has more than one internal service or worker
+- [ ] Key Algorithms & Critical Logic includes a reference implementation for any non-obvious logic, or is explicitly justified as not applicable
+
+**Rigor**
 - [ ] The Decision Log has a row for every non-obvious choice in the plan
 - [ ] The threat model names specific threats with specific mitigations
 - [ ] The scalability section states a numeric ceiling and names the first bottleneck
-- [ ] Mermaid diagrams are present for: system architecture, data flow, and data models
+- [ ] The Testing Strategy table names a tool and cadence for every test level
+- [ ] The Risk Register covers wrong design assumptions, distinct from Failure Modes
 - [ ] The Limitations section contains specific failure conditions, not caveats
 - [ ] Cost estimates exist for all three user tiers
-- [ ] Future Work phases have trigger conditions, not dates
+
+**Roadmap**
+- [ ] Implementation Roadmap covers the pre-launch build order with phases or weeks
+- [ ] Future Work phases have trigger conditions, not dates, and are distinct from the Implementation Roadmap
 
 ---
 
