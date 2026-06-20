@@ -73,7 +73,7 @@ system-blueprints/
 
 | Plan | Category | Author | Date | Problem |
 |---|---|---|---|---|
-| *(first plan coming soon)* | — | — | — | — |
+| [Vibe Maxxing](plans/app/vibe-maxxing.md) | `app` | @jdevshivamgarg | 2026-06-20 | People spend hours chatting with low-compatibility matches online only to realize they lack conversational chemistry. |
 
 ---
 
